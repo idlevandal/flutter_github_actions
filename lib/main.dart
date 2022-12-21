@@ -40,7 +40,7 @@ class _HomeState extends State<Home> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: const [
             Text('Home Page', style: TextStyle(fontSize: 40.0, color: Colors.blue),),
-            // Message(),
+            Message(),
           ],
         ),
       ),
