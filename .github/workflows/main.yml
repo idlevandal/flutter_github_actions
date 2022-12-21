@@ -9,8 +9,12 @@ jobs:
       with:
         # flutter-version: '3.0.0'
         channel: 'stable'
+    - name: Run Analyze
+      run: flutter analyze
+    - name: Run Formatter
+      run: flutter format --set-exit-if-changed .
+    - name: Run Test
+      run: flutter test
     - run: |
         flutter --version
-        flutter analyze
         flutter test
-        flutter format --set-exit-if-changed .
