@@ -17,3 +17,6 @@ jobs:
       run: flutter test
     - run: |
         flutter --version
+  build:
+    steps:
+      run: echo "All done..."
