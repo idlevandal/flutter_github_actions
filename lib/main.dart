@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_github_actions/message.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,8 +34,15 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: const Text('AppBar'),
       ),
-      body: const Center(
-        child: Text('Home Page', style: TextStyle(fontSize: 40.0, color: Colors.blue),),
+      body: SizedBox.expand(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: const [
+            Text('Home Page', style: TextStyle(fontSize: 40.0, color: Colors.blue),),
+            // Message(),
+          ],
+        ),
       ),
     );
   }
