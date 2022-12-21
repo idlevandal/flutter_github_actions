@@ -18,5 +18,6 @@ jobs:
     - run: |
         flutter --version
   build:
+    runs-on: ubuntu-latest
     steps:
       - run: echo "All done..."
