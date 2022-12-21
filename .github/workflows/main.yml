@@ -19,4 +19,4 @@ jobs:
         flutter --version
   build:
     steps:
-      run: echo "All done..."
+      - run: echo "All done..."
