@@ -37,13 +37,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get build artifacts
-        uses: actions/download-artifacts@v3
+        uses: actions/download-artifact@v3
         with:
           name: release-apk
       - name: Output contents
         run: ls
   build:
-    needs: analyze
+    needs: deploy
     runs-on: ubuntu-latest
     steps:
       - run: echo "All done..."
